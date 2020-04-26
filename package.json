@@ -26,7 +26,8 @@
     "metacloud": "^0.2.0",
     "metawear": "^0.2.0",
     "moment": "^2.19.2",
-    "winston": "^2.4.0"
+    "winston": "^2.4.0",
+    "ws": "^7.2.3"
   },
   "devDependencies": {
     "electron": "^2.0.5",
