@@ -24,7 +24,7 @@ mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 while True:
     # Read all the ADC channel values in a list.
     values = [0] * 4
-    for i in range(4):
+    for i in range(len(values)):
         values[i] = str(mcp.read_adc(i))
     print(','.join(values))
 
