@@ -21,6 +21,7 @@
   "homepage": "https://bitbucket.org/mbientlab/metabase-hub#readme",
   "dependencies": {
     "argparse": "^1.0.9",
+    "axios": "^0.21.0",
     "dygraphs": "^2.0.0",
     "express": "^4.17.1",
     "express-ws": "^4.0.0",
