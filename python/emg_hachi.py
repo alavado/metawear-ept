@@ -20,11 +20,18 @@ SPI_PORT   = 0
 SPI_DEVICE = 0
 mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 
+#hora = time.time()
+#freq = 1.0 / 1000
+
 # Main program loop.
 while True:
+ #   if (time.time() - hora > freq)
+ #       continue
+ #   hora = time.time()
     # Read all the ADC channel values in a list.
     values = [0] * 4
     for i in range(len(values)):
         values[i] = str(mcp.read_adc(i))
-    print(','.join(values))
+
+    print(','.join(values + [str(time.time())]))
 
